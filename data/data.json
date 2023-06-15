@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "id": "71614369-73b8-451f-97b9-fbb6d7668191",
+    "name": "John",
+    "company": "Microsoft",
+    "phone": "123-456-789",
+    "mail": "test@testowy.com",
+    "country": "belgium"
+  },
+  {
+    "id": "db18e7d9-0e79-4382-ae03-9a58d8e4d27f",
+    "name": "Daniel",
+    "company": "no-company",
+    "phone": "793-548-897",
+    "mail": "codeline00@gmail.com",
+    "country": "Poland"
+  }
+]
