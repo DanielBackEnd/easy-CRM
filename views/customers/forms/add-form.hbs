@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="main">
+        <div class="header">
+            <h3>Add new customer</h3>
+           {{> go-home-page}}
+        </div>
+        <div class="form">
+            <form method="POST" action="/customers">
+                <p><label >Customer Name<span style="color: #DF0404;">*</span>:</label></p>
+                <p><input type="text" name="name" required></p>
+                <p><label >Company<span style="color: #DF0404;">*</span>:</label></p>
+                <p><input type="text" name="company" required></p>
+                <p><label >Phone Number<span style="color: #DF0404;">*</span>:</label></p>
+                <p><input type="number" name="phone" required></p>
+                <p><label >Email<span style="color: #DF0404;">*</span>:</label></p>
+                <p><input type="email" name="mail" required></p>
+                <p><label >Country<span style="color: #DF0404;">*</span>:</label></p>
+                <p><input type="text" name="country" required></p>
+                <p><button class="add" type="submit">Add</button>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
