@@ -28,8 +28,9 @@ customersRouter
            name,
         });
     })
-    .put('/:id', (req, res) => {
-        res.send('customer has been edited.');
+    .put('/:id', async (req, res) => {
+        await db.update(req.params.id, req.body);
+        res.render('customers/edited-customer');
     })
     .delete('/:id', async (req, res) => {
         await db.delete(req.params.id);
@@ -37,6 +38,11 @@ customersRouter
     })
     .get('/forms/add-form', (req, res) => {
         res.render('customers/forms/add-form');
+    })
+    .get('/forms/edit-form/:id', (req,res) => {
+        res.render('customers/forms/edit-form', {
+            customer: db.getOne(req.params.id),
+        });
     })
 ;
 module.exports = {

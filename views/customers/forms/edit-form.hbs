@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="main">
+        <div class="header">
+            <h3>Edit customer</h3>
+            {{> go-home-page}}
+        </div>
+        <div class="form">
+            <form method="POST" action="/customers/{{customer.id}}?_method=PUT">
+                {{#with customer}}
+                    <p><label >Customer Name<span style="color: #DF0404;">*</span>:</label></p>
+                    <p><input type="text" name="name" required placeholder={{name}}></p>
+                    <p><label >Company<span style="color: #DF0404;">*</span>:</label></p>
+                    <p><input type="text" name="company" required placeholder={{company}}></p>
+                    <p><label >Phone Number<span style="color: #DF0404;">*</span>:</label></p>
+                    <p><input type="number" name="phone" required placeholder={{phone}}></p>
+                    <p><label >Email<span style="color: #DF0404;">*</span>:</label></p>
+                    <p><input type="email" name="mail" required placeholder={{mail}}></p>
+                    <p><label >Country<span style="color: #DF0404;">*</span>:</label></p>
+                    <p><input type="text" name="country" required placeholder={{country}}></p>
+                    <p><button class="add" type="submit">Edit</button></p>
+                {{/with}}
+            </form>
+        </div>
+    </div>
+</div>
