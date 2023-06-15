@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="main">
+        <div class="header">
+            <h3>{{customer.id}} - ({{customer.name}})</h3>
+            {{> go-home-page}}
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Company</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Country</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#with customer}}
+                    <tr>
+                        <td>{{name}}</td>
+                        <td>{{company}}</td>
+                        <td>{{phone}}</td>
+                        <td>{{mail}}</td>
+                        <td>{{country}}</td>
+                        <td>
+                            <div class="btns">
+                                <a class="edit" href="/customers/{{id}}">Edit</a>
+                            </div>
+                        </td>
+                    </tr>
+                {{/with}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

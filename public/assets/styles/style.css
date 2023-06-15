@@ -74,7 +74,7 @@ body {
     line-height: 72px;
 }
 
-.edit {
+.edit, .back-to-home-page {
     text-decoration: none;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
@@ -86,7 +86,7 @@ body {
     transition: background-color 0.5s;
 }
 
-.edit:hover {
+.edit:hover, .back-to-home-page:hover {
     background-color: rgba(101, 103, 0, 0.38);
 }
 

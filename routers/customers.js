@@ -10,7 +10,10 @@ customersRouter
         });
     })
     .get('/:id', (req, res) => {
-        res.send('getting one customer.');
+        const customer = db.getOne(req.params.id);
+        res.render('customers/get-one', {
+            customer,
+        });
     })
     .post('/', (req, res) => {
         res.send('adding new customer.');
