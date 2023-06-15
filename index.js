@@ -1,6 +1,8 @@
 const express = require('express');
 const hbs = require('express-handlebars');
 const {db} = require("./utils/db");
+const {homeRouter} = require("./routers/home");
+const {customersRouter} = require("./routers/customers");
 
 const app = express();
 
@@ -14,11 +16,8 @@ app.engine('.hbs', hbs.engine({
 }));
 app.set('view engine', '.hbs');
 
-// testing route
-app.get('/', (req, res) => {
-    console.log(db.getOne('db18e7d9-0e79-4382-ae03-9a58d8e4d27f'));
-    res.send('ok');
-});
+app.use('/', homeRouter);
+app.use('/customers', customersRouter);
 
 
 app.listen(3000, 'localhost', () => {
