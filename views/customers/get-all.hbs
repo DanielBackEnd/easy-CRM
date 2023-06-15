@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="main">
+        <div class="header">
+            <h3>All customers</h3>
+            <button>Add new customer</button>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Company</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Country</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{#each customers}}
+                    <tr>
+                        <td>{{this.name}}</td>
+                        <td>{{this.company}}</td>
+                        <td>{{this.phone}}</td>
+                        <td>{{this.mail}}</td>
+                        <td>{{this.country}}</td>
+                        <td>
+                            <div class="btns">
+                                <a class="edit" href="/customers/{{this.id}}">Details</a>
+                            </div>
+                        </td>
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,107 @@
+body {
+    background-color: #F8F9FE;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px 38px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h3 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.header button {
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    color: #008767;
+    border: 1px solid #008767;
+    border-radius: 4px;
+    background-color: rgba(22, 192, 152, 0.38);
+    padding: 4px 12px;
+    transition: background-color 0.5s;
+}
+
+.header button:hover {
+    background-color: rgba(22, 192, 152, 0.68);
+}
+
+.table {
+    width: 100%;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.table table {
+    width: 100%;
+}
+
+.table thead {
+    font-size: 14px;
+    color: #B5B7C0;
+    box-shadow: 0px 1px 0px 0px rgba(238, 238, 238, 1);
+    line-height: 50px;
+}
+
+.table thead th {
+    font-weight: 300;
+    letter-spacing: -0.16px;
+}
+
+.table tbody tr {
+    box-shadow: 0px 1px 0px 0px rgba(238, 238, 238, 1);
+    line-height: 72px;
+}
+
+.edit {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    color: #848700;
+    border: 1px solid #848700;
+    border-radius: 4px;
+    background-color: rgba(246, 251, 2, 0.38);
+    padding: 4px 12px;
+    transition: background-color 0.5s;
+}
+
+.edit:hover {
+    background-color: rgba(101, 103, 0, 0.38);
+}
+
+.delete {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    color: #DF0404;
+    border: 1px solid #DF0404;
+    border-radius: 4px;
+    background-color: rgba(255, 197, 197, 1);
+    padding: 4px 12px;
+    transition: background-color 0.5s;
+}
+
+.delete:hover {
+    background-color: rgba(251, 151, 151, 1);
+}
