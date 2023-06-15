@@ -26,7 +26,12 @@
                         <td>{{country}}</td>
                         <td>
                             <div class="btns">
-                                <a class="edit" href="/customers/{{id}}">Edit</a>
+                                <div><a class="edit" href="/customers/{{id}}">Edit</a></div>
+                                <div class="delete-btn">
+                                    <form method="POST" action="/customers/{{id}}?_method=DELETE">
+                                        <button class="delete" type="submit">Delete</button>
+                                    </form>
+                                </div>
                             </div>
                         </td>
                     </tr>

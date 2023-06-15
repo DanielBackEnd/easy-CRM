@@ -91,6 +91,7 @@ body {
 }
 
 .delete {
+    font-size: 15px;
     text-decoration: none;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
@@ -135,4 +136,10 @@ body {
 
 input:focus{
     outline: none;
+}
+
+.btns {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }

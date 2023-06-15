@@ -1,11 +1,13 @@
 const express = require('express');
 const hbs = require('express-handlebars');
+const methodOverride = require('method-override');
 const {db} = require("./utils/db");
 const {homeRouter} = require("./routers/home");
 const {customersRouter} = require("./routers/customers");
 
 const app = express();
 
+app.use(methodOverride('_method'));
 app.use(express.json());
 app.use(express.urlencoded({
     extended: true,

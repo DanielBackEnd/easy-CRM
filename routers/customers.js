@@ -31,8 +31,9 @@ customersRouter
     .put('/:id', (req, res) => {
         res.send('customer has been edited.');
     })
-    .delete('/:id', (req, res) => {
-        res.send('customer has been deleted');
+    .delete('/:id', async (req, res) => {
+        await db.delete(req.params.id);
+        res.render('customers/deleted-customer');
     })
     .get('/forms/add-form', (req, res) => {
         res.render('customers/forms/add-form');
